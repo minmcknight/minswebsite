@@ -3,6 +3,10 @@
   font-family: 'bodoni';
   src: url('BodoniXT.ttf') format('truetype');
 }
+
+a:hover{
+  text-decoration: none;
+}
 body {
   text-align: center;
   font-family: 'bodoni', serif;

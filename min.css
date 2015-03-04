@@ -70,6 +70,49 @@ div.project img{
   width: 100%;
 }
 
+div.project {
+  background-color: #EEE;
+  border-radius: 5px;
+  width: 50%;
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  opacity: 0.9;
+}
+section {
+  height: 800px;  
+    margin: 0 auto; 
+    width: 100%; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    background-repeat: no-repeat;
+}
+
+#designer-data {
+  background: url(images/designer_data.png) 50% 0 fixed;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;    
+  -o-background-size: contain;
+  background-size: contain;
+  padding: 100px 0;
+}
+
+#wanderlust {
+  background: url(images/wanderlust.png) 50% 0 fixed;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;    
+  -o-background-size: contain;
+  background-size: contain;
+  padding: 200px 0;
+}
+
+#where2eat {
+  background: url(images/eat.png) 50% 0 fixed;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;    
+  -o-background-size: contain;
+  background-size: contain;
+  padding: 100px 0;
+}
+
 @media (max-width: 40em){
  h1{
   font-size: 3em;

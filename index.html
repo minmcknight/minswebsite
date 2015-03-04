@@ -46,33 +46,77 @@
   </div>
    
   <a id="about-anchor" name="about"></a>
-  <div class= "container" id="about">
+  <div class="container" id="about">
     <h2> Web developer{full stack};</h2>
     <p class="description"> I am a full-stack web developer with a passion for analyzing big data. I want to create data-driven visualizations which provide narratives that effectively communicate complex ideas.
     </p>
   </div>
   <a name="projects"></a>
+  <section id="where2eat"  data-speed="6" data-type="background">
   <div class="container project">
   <a href="https://desolate-plateau-3067.herokuapp.com">
-    <h2> INDIVIDUAL PROJECT::Where2Eat</h2>
-    <img src="images/eat.png">
+    <h3> INDIVIDUAL PROJECT: </h3>
+    <h2>  Where2Eat</h2>
+    <h3> This Heroku-hosted, Sinatra + PostgreSQL application allows people to collaborate on where to get lunch. It features an innovative
+    algorithm for combining individual preferences. </h3>
+    <!--<img src="images/eat.png">-->
   </a>
 </div>
-  <div class="container project">
+  </section>
+  <section id="wanderlust" data-speed="4" data-type="background">
+  <div class="container project" >
   <a href="https://limitless-stream-6507.herokuapp.com/">
-  <h2> TEAM PROJECT::Wanderlust</h2>
-  <img src="images/wanderlust.png">
+  <h3> TEAM PROJECT: </h3>
+  <h2>  Wanderlust</h2>
+  <h3> This Heroku-hosted, Ruby on Rails, PostgreSQL, jQuery, and Leaflet 
+       application
+       queries the Everytrail API to provide hiking and walking
+       tour guide information for any location in the world. It
+       uses OpenStreetMap's Nominatim API to geocode locations.
+  </h3>
+  <!--<img src="images/wanderlust.png">-->
   </a>
   </div>
+  </section>
+  <section id="designer-data"  data-speed="2" data-type="background">
     <div class="container project">
   <a href="http://designerdata.space">
-  <h2> FINAL PROJECT::Designer Data</h2>
-  <img src="images/designer_data.png">
+  <h3> FINAL PROJECT: </h3>
+  <h2>Designer Data</h2>
+  <h3> This Ruby on Rails, PostgresSQL, D3.js and jQuery application 
+       allows people to upload datasets, analyze them, visualize the data using a variety of charts and graphs. Your awesome results can be shared via Twitter. 
+  </h3>
+  <!--<img src="images/designer_data.png">-->
   </a>
   </div>
+  </section>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+<script>
+$(document).ready(function(){
+   // cache the window object
+   $window = $(window);
+ 
+   $('section[data-type="background"]').each(function(){
+     // declare the variable to affect the defined data-type
+     var $scroll = $(this);
+                     
+      $(window).scroll(function() {
+        // HTML5 proves useful for helping with creating JS functions!
+        // also, negative value because we're scrolling upwards                             
+        var yPos = -($window.scrollTop() / $scroll.data('speed')); 
+         
+        // background position
+        var coords = '50% '+ yPos + 'px';
+ 
+        // move the background
+        $scroll.css({ backgroundPosition: coords });    
+      }); // end window scroll
+   });  // end section function
+}); // close out script
+</script>
 
 </body>	
 </html>

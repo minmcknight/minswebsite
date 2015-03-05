@@ -112,6 +112,15 @@ section {
   background-size: contain;
   padding: 100px 0;
 }
+#hangman {
+  background: url(images/hangman.png) 50% 0 fixed;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;    
+  -o-background-size: contain;
+  background-size: contain;
+  padding: 100px 0;
+}
+
 
 @media (max-width: 40em){
  h1{

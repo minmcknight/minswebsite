@@ -75,11 +75,12 @@ div.project {
   border-radius: 5px;
   width: 50%;
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
-  opacity: 0.9;
+  opacity: 0.95;
 }
 section {
   height: 800px;  
-    margin: 0 auto; 
+    margin: 0 auto;
+    margin-bottom: 100px; 
     width: 100%; 
     position: relative; 
     box-shadow: 0 0 50px rgba(0,0,0,0.8);
